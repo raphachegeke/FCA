@@ -1,0 +1,18 @@
+.gender{
+  display: flex;
+  flex-direction: column;
+}
+.seeDiv a{
+  width: 100%;
+}
+.leon{
+    width: 150px;
+    height: 150px;
+
+}
+.profile{
+  margin-top: 50px;
+}
+.members{
+  padding-top: 30px;
+}

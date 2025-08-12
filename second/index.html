@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body class="bg-dark text-white">
+  <section class="py-5">
+    <div class="container">
+      <div class="card shadow-lg p-4 mx-auto" style="max-width: 500px;">
+        <h2 class="mb-4 text-center">FCA STUDENT PORTAL <br> Sign In</h2>
+
+        <form method="" action="profiles.html">
+          <!-- this is input for name -->
+          <div class="mb-3">
+            <label for="inputName" class="form-label">Your Full Name</label>
+            <input type="text" class="form-control" id="inputName" name="fullname" maxlength="30" minlength="10"
+              required>
+            <div class="form-text">Enter the name on your National Identity</div>
+          </div>
+
+          <!-- input for the Phone number -->
+          <div class="mb-3">
+            <label for="inputPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="inputPhone" name="phone" pattern="\+254[0-9]{9}" maxlength="13"
+              minlength="13" required>
+            <div class="form-text">Use country code e.g. +254748397839</div>
+          </div>
+
+          <!-- input fot theEmail -->
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="inputEmail" name="email" pattern="[a-z0-9._%+-]+@gmail\.com"
+              required>
+            <div class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+
+          <!-- radio buttons for Gender -->
+          <div class="gender mb-3">
+            <label class="form-label">Gender</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+          </div>
+
+          <!-- the select tag for Age -->
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <select name="age" id="age" class="form-select" required>
+              <option value="" selected disabled>Choose your age range</option>
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36+">36+</option>
+            </select>
+          </div>
+
+          <!-- Checkbox for selecting courses -->
+          <div class="mb-3">
+            <label class="form-label">Courses</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="course" id="webDesign" value="Web Design">
+              <label class="form-check-label" for="webDesign">Web Design</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="course" id="graphicDesign" value="Graphic Design">
+              <label class="form-check-label" for="graphicDesign">Graphic Design</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="course" id="digitalMarketing"
+                value="Digital Marketing">
+              <label class="form-check-label" for="digitalMarketing">Digital Marketing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="course" id="animation" value="Animation">
+              <label class="form-check-label" for="animation">Animation</label>
+            </div>
+          </div>
+
+
+          <!-- this is an input for Password -->
+          <div class="mb-4">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="password" minlength="6" required>
+          </div>
+
+          <!-- Submit button -->
+          <div class="seeDiv">
+            <button type="submit" class="btn btn-primary mt-2 w-100"> Sign In</button>
+            <a href="users.html" class="btn btn-primary mt-2 w-100">Go to Home</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
